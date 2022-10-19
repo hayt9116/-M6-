@@ -20,7 +20,7 @@ def menu(title, prompt, options):
 mat_dict = {
     "Pasta": ["Köttfärssås och spaghetti", "Pasta carbonara", "Köttbullar och makaroner", "Korv och makaroner"],
     "Vegetariskt": ["Falafel", "Ostpaj", "Bönbiffar med ris"],
-    "Kött": ["Köttfärssås och spaghetti", "Pasta carbonara", "Köttbullar och makaroner", "Korv och makaroner"]}
+    "Kött": ["Köttfärssås och spaghetti", "Pasta carbonara", "Köttbullar och makaroner", "Korv och makaroner", "Kycklingenchilada", "Tacos"]}
 
 
 print("Alternativ: Pasta, Kött eller Vegetariskt")
@@ -220,6 +220,67 @@ peppar''')
 
 
 4. Koka riset i 10-12 min''')
+                if mat1 == "Kycklingenchilada":
+                    print()
+                    print(f" Recept för {mat1}")
+                    print()
+                    print('''400 g kycklingfilé(er), ca 2-3 stycken
+2 st gul lök(ar)
+smör
+1 tsk salt
+1 tsk sambal oelek
+2 dl crème fraîche
+4 st tortillabröd, stora, eller 8 små
+2 dl Ost, riven''')
+                    print('''1. Sätt ugnen på 225 grader.
+
+
+2. Strimla kycklingen tunt. Skala och hacka löken. Bryn kycklingen i smör i en stekpanna. Rör ner löken och låt den fräsa med.
+
+
+3. Krydda med salt och sambal oelek. Rör ner crème fraiche och låt det koka ihop någon minut.
+
+
+4. Fördela röran på tortillabröden och rulla ihop dem. Lägg dem tätt på ett ugnssäkert fat. Strö över osten.
+
+
+5. Gratinera i mitten av ugnen 10-15 minuter.''')
+                if mat1 == "Tacos":
+                    print()
+                    print(f" Recept för {mat1}")
+                    print()
+                    print('''500 g köttfärs
+2 msk rapsolja
+1 påse tacokrydda
+2 msk vatten
+2 msk tacosås, mild
+12 st tacoskal, hårda
+1 kruka sallad, strimlad
+3 st tomater, hackade
+1/2 st gurka, hackad
+1 st gul lök(ar), hackad
+1 st gul paprika, hackad
+1 st röd paprika, hackad
+2 dl riven ost
+Tillbehör
+tacosås, mild, eller salsa
+gräddfil''')
+                    print('''1. Sätt ugnen på 175 grader.
+
+
+2. Hetta upp en stor stekpanna och bryn köttfärsen i lite matfett. Tillsätt tacokrydda när färsen börjar bli klar tillsammans med 2 matskedar vatten och 2 matskedar tacosås. Rör om och låt puttra i 2-3 minuter på låg värme.
+
+
+3. Skölj salladen. Skölj och hacka resterande grönsaker.
+
+
+4. Värm tacoskalen i ugnen i 2-3 minuter.
+
+
+5. Ställ upp tacoskalen på tallrikar och täck botten med salladsblad.
+
+
+6. Lägg på köttfärs och sedan hackade grönsaker. Ringla över gräddfil och tacosås och avsluta med riven ost på toppen.''')
                 break
         if meny == "q":
             print("Programmet avslutas")
@@ -233,5 +294,6 @@ peppar''')
     else:
         print("Ogiltigt alternativ! Försök igen.")
         mat = input("Vad är du sugen på?: ")
+
 
 
